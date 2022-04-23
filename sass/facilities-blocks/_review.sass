@@ -1,0 +1,48 @@
+.review
+  &__container
+    display: flex
+    flex-direction: column
+    text-align: center
+    margin-bottom: 114px
+  &__title
+    margin-bottom: 26px
+  &__subtitle
+    margin-bottom: 20px
+    font-weight: 400
+    font-size: 30px
+  &__author
+    margin-bottom: 24px
+    font-size: 25px
+    line-height: 30px
+  &__btn1
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  &__btn
+    background-color: #E0B973
+    padding: 15px 18px
+    border-radius: 8px
+    &-right 
+      margin-left: 22px
+
+$layout-breakpoint-small: 992px
+@media (max-width: $layout-breakpoint-small)
+  .review
+    &__btn
+      padding: 10px 15px
+      &__img
+        width: 18px
+        height: 16px
+        
+    &__container
+      max-width: 800px
+      margin: auto
+      margin-bottom: 100px
+    &__subtitle
+      font-size: 22px
+      line-height: 25px
+    &__author
+      font-size: 22px
+      line-height: 25px
+

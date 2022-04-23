@@ -1,0 +1,65 @@
+.home 
+  background-image: url(.././img/homepage.png)
+.booking
+  &__container
+    width: 1600px
+    margin: auto
+    margin-bottom: 115px
+  &__title
+    font-weight: 400
+    font-size: 36px
+    line-height: 44px
+    margin-bottom: 92px
+    text-align: center
+  &__line
+    border: 1px solid $blue
+    height: 334px
+    margin-right: 48px
+  &__box
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 70px
+    &__title1
+      margin-bottom: 24px
+    &__title2
+      margin-bottom: 12px
+    &__subtitle
+      margin-bottom: 30px
+    &__content
+      max-width: 560px
+      margin-right: 110px
+    &__btn
+      display: inline-block
+      padding: 20px 69px
+      background-color: $orange
+      border-radius: 8px
+      text-decoration: none
+      color: #FFFFFF
+      font-size: 20px
+      line-height: 24px 
+
+
+@media (max-width: 992px)
+  .booking
+    &__img
+      width: 800px
+    &__container
+      max-width: 800px
+      margin: auto
+    &__box
+      display: flex
+      flex-direction: column
+      &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 0
+
+      &__btn
+        margin-bottom: 40px
+        display: block
+        width: 220px
+        padding: 11px 60px
+    &__line
+      display: none
