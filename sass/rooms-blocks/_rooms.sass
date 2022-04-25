@@ -52,8 +52,92 @@
     color: inherit
     &__btn
       margin-right: 40px
-      
+@media (max-width: 1600px)
+  .rooms
+    &__container
+      max-width: 1200px
+      margin: auto
+    &__box
+      max-width: 1200px
+      &__img
+        max-width: 1200px
+  
 
-    
+@media (max-width: 1200px) 
+  .rooms
+    &__container
+      max-width: 707px
+    &__box
+      width: 707px
+      &__img
+        height: 600px
+        width: 707px
+      &__title
+        padding: 25px
+        top: 500px
+    &__add
+      padding-top: 45px
+      padding-bottom: 45px
+      &__btn
+        padding: 18px 35px
+        font-size: 20px
+        line-height: 25px
+    &__detail
+      &__btn
+        width: 35px
+        height: 35px
+    &__view
+      font-size: 20px
+      line-height: 25px
+        
+        
+@media (max-width: 768px)
+  .rooms
+    &__container
+      max-width: 500px
+      margin: auto
+    &__box
+      max-width: 500px
+      &__img
+        max-width: 500px
+    &__detail
+      margin-bottom: 40px
+    &__add
+      flex-direction: column
+      align-items: center
+      &__btn
+        display: inline-block
+@media (max-width: 576px)
+  .rooms
+    &__container
+      max-width: 300px
+      margin: auto
+    &__text
+      &__title
+        font-size: 30px
+        line-height: 38px
+    &__add
+      padding-top: 20px
+      padding-bottom: 20px
+      &__btn
+        font-size: 12px
+        padding: 8px 12px
+    &__detail
+      margin-bottom: 10px
+      &__btn
+        width: 20px
+        height: 20px
+    &__view
+      font-size: 14px
+    &__box
+      max-width: 300px
+      &__title
+        font-size: 20px
+        line-height: 28px
+        padding: 15px
+        top: 250px
+      &__img
+        max-width: 300px
+        height: 300px
 
       

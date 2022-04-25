@@ -59,7 +59,7 @@
 .title1
   font-family: 'Montserrat'
   font-style: normal
-  font-weight: 400
+  font-weight: 700
   font-size: 50px
   line-height: 61px
 .title2
@@ -69,7 +69,11 @@
   font-size: 154px
   line-height: 134px
   letter-spacing: 0.07em
+  padding-bottom: 14px
 .title3
+  font-weight: 700
+  font-size: 60px
+  line-height: 60px
   letter-spacing: 0.4em
 .title4 
   letter-spacing: 0.1em
@@ -87,6 +91,7 @@
     background-color: $orange
     border-radius: 8px
     padding: 23px 40px
+    font-weight: 700
     font-size: 25px
     line-height: 30px
     &__img
@@ -100,35 +105,90 @@
       font-style: normal
       font-weight: 700
       font-size: 25px
+      padding-bottom: 10px
 
-$layout-breakpoint-small: 992px
-
-@media (max-width: $layout-breakpoint-small)
+@media (max-width: 1600px)
   .intro
     &__container
-      max-width: 800px
+      max-width: 1200px
       text-align: center
       height: 1080px
   .header
-    padding-top: 80px
+    padding-top: 60px
     &__logo
       display: none
   .navbar
-    width: 800px
+    width: 1200px
     margin: auto
     &__items
       display: flex
       justify-content: space-between
       align-items: center
+  
+
+
+@media (max-width: 1200px)
+  .intro
+    &__container
+      max-width: 707px
+      text-align: center
+      height: 1080px
+  .header
+    padding-top: 90px
+    &__logo
+      display: none
+  .navbar
+    width: 707px
+    margin: auto
+    
+  
+
+@media (max-width: 992px)
+  .navbar
+    &__link
+      font-size: 20px
+      line-height: 24px
+  .title1
+    font-size: 36px
+    line-height: 44px   
+  .title2
+    font-size: 96px
+    line-height: 100px
+  .title3
+    font-size: 40px
+    line-height: 48px
+  .title4
+    font-size: 16px
+    line-height: 20px
   .scroll
-    display: none
-  h1
-    font-size: 120px
-    line-height: 140px
+    &-btn
+      padding: 12px 30px
+      font-size: 20px
+      line-height: 24px
+      &__img
+        width: 21px
+        height: 18px
+    &-main
+      display: none
   h2 
     font-size: 40px
     line-height: 52px 
 
+@media (max-width: 480px) 
+  .title1
+    font-size: 24px
+    line-height: 29px
+  .title2
+    font-size: 60px
+    line-height: 70px
+  .scroll
+    &-btn
+      padding: 12px 30px
+      font-size: 20px
+      line-height: 24px
+      &__img
+        width: 21px
+        height: 18px
 
   
   

@@ -19,7 +19,7 @@
     display: flex
     flex-direction: row
     align-items: center
-    margin-bottom: 70px
+    margin-bottom: 80px
     &__title1
       margin-bottom: 24px
     &__title2
@@ -40,12 +40,13 @@
       line-height: 24px 
 
 
-@media (max-width: 992px)
+
+@media (max-width: 1600px) 
   .booking
     &__img
-      width: 800px
+      width: 1100px
     &__container
-      max-width: 800px
+      max-width: 1200px
       margin: auto
     &__box
       display: flex
@@ -54,12 +55,54 @@
         display: flex
         flex-direction: column
         align-items: center
+        text-align: center
         margin-right: 0
 
       &__btn
+        margin-left: 0
         margin-bottom: 40px
         display: block
         width: 220px
         padding: 11px 60px
     &__line
       display: none
+@media (max-width: 1200px) 
+  .booking
+    &__container
+      max-width: 707px
+      margin: auto
+    &__img
+      width: 700px
+    &__title
+      max-width: 707px
+      margin: auto
+      margin-bottom: 80px
+    &__boxes
+      width: 707px
+      margin: auto
+    &__img
+      width: 707px
+@media (max-width: 768px)
+  .booking
+    &__container
+      max-width: 500px
+    &__title
+      font-size: 25px
+    &__boxes
+      max-width: 500px
+      margin: auto
+    &__img
+      max-width: 400px
+  
+@media (max-width: 480px)
+  .booking
+    &__container
+      max-width: 300px
+    &__title
+      font-size: 18px
+    &__boxes
+      max-width: 300px
+      margin: auto
+    &__img
+      max-width: 300px
+      

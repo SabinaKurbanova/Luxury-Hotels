@@ -6,8 +6,8 @@
     width: 1550px
     color: #FFFFFF
     margin: auto
-    padding-bottom: 70px
-    padding-top: 136px
+    padding-bottom: 68px
+    padding-top: 88px
     display: flex
     justify-content: space-between
     align-items: center
@@ -83,4 +83,57 @@
         border-radius: 2px
         color: $blue
         cursor: pointer
+
+@media (max-width: 1600px)
+  .footer
+    &__container
+      width: 1150px
+      display: flex
+      flex-direction: column
+    &__links
+      &-bottom
+        width: 1150px
+    &__logo
+      padding-bottom: 60px
+      width: 1150px
+      display: flex
+      justify-content: space-between
+
+@media (max-width: 1200px)
+  .footer
+    &__container
+      width: 707px
+      display: flex
+      flex-direction: column
+    &__links
+      &-bottom
+        width: 707px
+    &__logo
+      width: 707px
+    &__subscribe
+      &__input
+        padding: 18px 20px
+        &__btn
+          padding: 18px 27px
+
+  
+@media (max-width: 768px)
+  .footer
+    clip-path: none
+    background-color: $blue
+    &__contacts
+      margin-top: 50px
+      margin-bottom: 50px  
+    &__container
+      width: 500px
+      padding-top: 120px
+    &__logo
+      width: 500px
+      flex-direction: column
+      align-items: start
+    &__links
+      &-bottom
+        width: 500px
+        flex-direction: column
+        align-items: start
         
